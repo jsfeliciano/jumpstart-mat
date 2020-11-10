@@ -20,6 +20,9 @@
     visibility: visible;
     top: 100%;
   }
+  .hidden-l {
+    display: none !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -52,6 +55,11 @@
     width: 100%;
     margin-top: 40px;
   }
+  .hidden-zm {
+    display: none !important;
+  }
+  
+
 }
 
 @media (max-width: 768px) {
@@ -83,4 +91,8 @@
   .client-logo {
     margin-bottom: 30px;
   }
+  .hidden-xs {
+    display: none !important;
+  }
+  
 }

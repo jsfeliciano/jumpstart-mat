@@ -720,6 +720,7 @@ CTA Subscribe
   position: relative;
   border-radius: 10px;
   background: #222;
+  margin: 1px;
 }
 
 .cta-inner .subheading2, .cta-inner h2 {
@@ -853,6 +854,7 @@ Testimonial
 .auhtor-img {
   position: relative;
   z-index: 1;
+  margin: 20px;
 }
 
 .auhtor-img img {
@@ -1752,3 +1754,6 @@ Footer Section
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0px;
 }
+
+}
+
