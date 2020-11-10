@@ -80,6 +80,12 @@
 
   $('.panel-group').on('hidden.bs.collapse', toggleIcon);
   $('.panel-group').on('shown.bs.collapse', toggleIcon);
+$(document).on('click','.navbar-toggleable-xs.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+  
   /* ---------------------------------------------
          Contact Form
   --------------------------------------------- */
@@ -116,3 +122,12 @@
     }).done(done_func).fail(fail_func);
   });
 })(jQuery);
+
+$(function(){ 
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
